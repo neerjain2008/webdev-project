@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Expense Tracker</title>
+  <link rel="stylesheet" href="JaiHind.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Expense Tracker</h1>
+    <p>Track your daily expenses.</p>
+
+    <div class="total-box">
+      <h2>Total Expenses: ₹<span id="total">0</span></h2>
+    </div>
+
+    <div class="form-section">
+      <h3>Add New Expense</h3>
+
+      <form id="expense-form">
+        <input type="text" id="expense-name" placeholder="Enter expense name">
+
+        <input type="number" id="expense-amount" placeholder="Enter amount">
+
+        <select id="expense-category">
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Education">Education</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <button type="submit">Add Expense</button>
+      </form>
+
+      <p id="message"></p>
+    </div>
+
+    <div class="expense-section">
+      <div class="expense-header">
+        <h3>Expense List</h3>
+
+        <select id="category-filter">
+          <option value="All">All Categories</option>
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Education">Education</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <ul id="expense-list"></ul>
+      <p id="empty-message">No expenses added yet.</p>
+    </div>
+  </div>
+
+  <script src="JaiHind.js"></script>
+</body>
+</html>
